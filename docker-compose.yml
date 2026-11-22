@@ -1,0 +1,11 @@
+services:
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa
+    ports:
+      - "8080:80"
+
+  kali:
+    build: ./kali
+    container_name: kali
+    tty: true
